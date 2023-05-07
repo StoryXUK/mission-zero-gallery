@@ -11,11 +11,51 @@ const anita_config = {
     // Main Menu config for quick and same result for all pages.
     // Use 'Label' : 'url' for menu items and 'Label' : { ... } for Submenus. Don't forget about commas after each item.
     main_menu: {
-       
+        'Works': {
+            'Slide Carousel': 'index.html',
+            'Roll Carousel': 'works-carousel-roll.html',
+            'Fullscreen Slider': {
+                'Parallax Movement': 'works-slider-parallax.html',
+                'Fade Sliding': 'works-slider-fade.html',
+                'Diagonally Sliced': 'works-slider-sliced.html',
+                'Pixel Storm': 'works-slider-pixels.html'
+            },
+            'Flat Carousel': 'works-carousel-flat.html',
+            'Classic Grid': 'works-classic-grid.html',
+            'Simple Menu': 'simple-menu.html'
+        },
+        'Galleries': {
+            'WebGL Carousel': 'albums-gl-carousel.html',
+            'Flat Carousel': 'albums-carousel.html',
+            'Slider': {
+                'Parallax Movement': 'albums-slider-parallax.html',
+                'Fade Sliding': 'albums-slider-fade.html',
+                'Diagonally Sliced': 'albums-slider-sliced.html',
+                'Pixel Storm': 'albums-slider-pixels.html'
+            },
+            'Adjusted Grid': {
+                'Adjusted: 2 Columns': 'albums-adjusted-2col.html',
+                'Adjusted: 3 Columns': 'albums-adjusted-3col.html',
+                'Adjusted: 4 Columns': 'albums-adjusted-4col.html'
+            },
+            'Strong Grid': {
+                'Grid: 2 Columns': 'albums-grid-2col.html',
+                'Grid: 3 Columns': 'albums-grid-3col.html',
+                'Grid: 4 Columns': 'albums-grid-4col.html'
+            },
+            'Masonry Grid': {
+                'Masonry: 2 Columns': 'albums-masonry-2col.html',
+                'Masonry: 3 Columns': 'albums-masonry-3col.html',
+                'Masonry: 4 Columns': 'albums-masonry-4col.html'
+            },
+            'Justified': 'albums-justified.html',
+            'Bricks 1x2': 'albums-bricks-1x2.html',
+            'Bricks 2x3': 'albums-bricks-2x3.html'
+        },
         'About': 'page-about.html',
-        // 'Services': 'page-services.html',
-        // 'Testimonials': 'page-testimonials.html',
-        // 'Contacts': 'page-contacts.html'
+        'Services': 'page-services.html',
+        'Testimonials': 'page-testimonials.html',
+        'Contacts': 'page-contacts.html'
     },
 
     // Option to stick the header to the top of the page
