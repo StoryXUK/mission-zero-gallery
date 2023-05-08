@@ -86,6 +86,211 @@ Table of Contents
 17. ANIMATIONS
 
 -------------------------------------- */
+/* ------------------------------------- */
+/* 1. LOADING SCREEN ................... */
+/* ------------------------------------- */
+#loading {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+  }
+  
+  #loading:before {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: calc(50% + 2px);
+    content: '';
+    -webkit-transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+    background: #0B071D;
+  }
+  
+  #loading:after {
+    position: absolute;
+    z-index: -20;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: calc(50% + 2px);
+    content: '';
+    -webkit-transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+    background: #0B071D;
+  }
+  
+  #loading.loaded:before {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  
+  #loading.loaded:after {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  
+  #loading .loader,
+  #loading .loader__figure {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  #loading .loader {
+    overflow: visible;
+    width: 100%;
+    height: 50px;
+    padding: 0 100px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+  }
+  
+  #loading .loader.loaded {
+    opacity: 0;
+  }
+  
+  #loading .loader .dots {
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+  }
+  
+  #loading .loader .dots:nth-child(6) {
+    -webkit-animation: moving 3s infinite ease;
+            animation: moving 3s infinite ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  
+  #loading .loader .dots:nth-child(5) {
+    -webkit-animation: moving 3s 100ms infinite ease;
+            animation: moving 3s 100ms infinite ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  
+  #loading .loader .dots:nth-child(4) {
+    -webkit-animation: moving 3s 200ms infinite ease;
+            animation: moving 3s 200ms infinite ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  
+  #loading .loader .dots:nth-child(3) {
+    -webkit-animation: moving 3s 300ms infinite ease;
+            animation: moving 3s 300ms infinite ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  
+  #loading .loader .dots:nth-child(2) {
+    -webkit-animation: moving 3s 400ms infinite ease;
+            animation: moving 3s 400ms infinite ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  
+  #loading .loader .dots:nth-child(1) {
+    -webkit-animation: moving 3s 500ms infinite ease;
+            animation: moving 3s 500ms infinite ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  
+  #loading .loader .loader__label {
+    font-family: Montserrat, "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;
+    font-size: .875em;
+    line-height: 1.5em;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    margin-left: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /* WORDS SWAP */
+  }
+  
+  #loading .loader .loader__label span {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #loading .loader .loader__label span#text__loader {
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-animation: loader-label 2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation: loader-label 2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    text-align: left;
+  }
+  
+  #loading .loader .loader__label [data-words] {
+    position: static;
+    vertical-align: top;
+  }
+  
+  #loading .loader .loader__label [data-words] > span {
+    position: absolute;
+    color: #3f51b5;
+  }
+  
+  @-webkit-keyframes moving {
+    0% {
+      -webkit-transform: translateX(-300px);
+              transform: translateX(-300px);
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(300px);
+              transform: translateX(300px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes moving {
+    0% {
+      -webkit-transform: translateX(-300px);
+              transform: translateX(-300px);
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(300px);
+              transform: translateX(300px);
+      opacity: 0;
+    }
+  }
+
+
+
+
 
 /* 01. GENERAL
    ----------- */
@@ -3104,6 +3309,10 @@ body.anita-unload.anita-show-menu .anita-nav {
         transform: translateX(0);
     }
 }
+
+
+
+
 
 
 
