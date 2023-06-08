@@ -1,6 +1,6 @@
 /**
- * Author: Shadow Themes
- * Author URL: https://shadow-themes.com
+ * Author: StoryX
+ * Author URL: https://story-x.co.uk
  */
 
 
@@ -20,7 +20,7 @@ const anita_config = {
     main_menu: {
        
         'About': 'page-about.html',
-        // 'Services': 'page-services.html',
+        'Portal': 'portal.html',
         // 'Testimonials': 'page-testimonials.html',
         // 'Contacts': 'page-contacts.html'
     },

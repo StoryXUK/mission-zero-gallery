@@ -1548,6 +1548,17 @@ body.anita-show-menu .anita-page-background {
     will-change: opacity;
     opacity: 0.4;
 }
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+  }
 .anita-gl-gallery-item.is-active {
     pointer-events: all;
     opacity: 1;
