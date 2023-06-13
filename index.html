@@ -26,6 +26,10 @@
 </head>
 
 <body>
+
+
+
+
     <!-- Header -->
     <header id="anita-header" class="anita-header">
         <div class="anita-header-inner">
@@ -52,158 +56,102 @@
     <!-- Page Main -->
     <main class="anita-main">
 
+        <audio id="myAudio" src="path/to/audio-file.mp3" autoplay></audio>
+
+
         <!-- WebGL Slider Gallery -->
-        <div class="anita-gl-container-wrap anita-gl-slider-gallery-wrap anita-scrollEW">
-            <!-- Album Title -->
-            <div class="anita-fixed-album-title">
-                <div class="anita-album-title">
-                    <div class="anita-albums-back-wrap" data-aos="fade-up">
-                        <a href="#" class="anita-albums-back">Back to Listing</a>
-                    </div>
-                    <h1 class="anita-page-title" data-aos="fade-up" data-aos-delay="50"></h1>
-                    <div class="anita-post-meta anita-meta" data-aos="fade-up" data-aos-delay="100"
-                        data-aos-offset="20">
-                        <span>Mission Zero</span>
-                        <!-- <span>The end</span> -->
-                    </div>
-                </div><!-- .anita-album-title -->
-            </div><!-- .anita-fixed-album-title -->
-
-            <!-- Album Gallery -->
+        <div class="anita-gl-container-wrap anita-albums-listing anita-gl-slider-gallery-wrap anita-scrollEW">
             <div class="anita-gl-container anita-gl-slider-gallery" data-type="parallax" data-fit="cover"
-                data-intensity="0.5" data-prev-label="Previous Photo" data-next-label="Next Photo">
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story.jpg" data-size="1920x1080"></div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (3).jpg" data-size="1920x1080">
-                    <div class="overlay">The Cost of Carbon</div>
+                data-intensity="0.5" data-prev-label="Previous Work" data-next-label="Next Work">
+                <!-- Gallery Item -->
+                <div class="anita-gl-gallery-item is-video" data-src="video/mission-zero-typewriter.mp4"
+                    data-size="1280x720">
+
+
+                    <!-- <div class="anita-gl-gallery-item__content" data-aos="fade-up">
+                        <span class="anita-meta anita-gl-gallery__meta">Portraits</span>
+                        <h2 class="anita-gl-gallery__caption">
+                            <sup>01.</sup>Green Turban
+                        </h2>
+                        <span class="anita-gl-gallery__explore">Explore</span>
+                        <a href="albums-gl-carousel.html" class="anita-album-link"></a>
+                    </div> -->
+                </div>
+                <!-- Gallery Item -->
+                <div class="anita-gl-gallery-item is-video" data-src="video/chimneys-mz.mp4" data-size="1280x720">
+                    <div class="overlay">CO2 is being released into the atmosphere faster than at any time in at least
+                        the last 66 million years.</div>
+
+                    <!-- <div class="anita-gl-gallery-item__content" data-aos="fade-up">
+                        <span class="anita-meta anita-gl-gallery__meta">Portraits</span>
+                        <h2 class="anita-gl-gallery__caption">
+                            <sup>01.</sup>Green Turban
+                        </h2>
+                        <span class="anita-gl-gallery__explore">Explore</span>
+                        <a href="albums-gl-carousel.html" class="anita-album-link"></a>
+                    </div> -->
                 </div>
 
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (4).jpg" data-size="1920x1080">
-                    <div class="overlay">Globally, floods and
-                        extreme rainfall events
-                        now occur
-                        four times more often than in 1980.</div>
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (5).jpg" data-size="1920x1080">
-                    <div class="overlay">Extreme weather disasters cost the global economy $2.5 trillion in the last
-                        decade,an increase of almost $1 trillion over the previous ten years.</div>
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (6).jpg" data-size="1920x1080">
-                    <div class="overlay"></div>
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (7).jpg" data-size="1920x1080">
-                    <div class="overlay">Chennai, India’s sixth largest city, nearly ran out of water as its reservoirs
-                        dried up.</div>
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (8).jpg" data-size="1920x1080">
-                    <div class="overlay">The drought was the worst in living memory for the residents of Chennai.</div>
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (9).jpg" data-size="1920x1080">
-                    <div class="overlay">More than 200 elephants have died during the prolonged drought.</div>
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (10).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (11).jpg" data-size="1920x1080">
-                    <div class="overlay">Fires dramatically raised food prices causing riots</div>
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (12).jpg" data-size="1920x1080">
-                    <div class="overlay">“I had 400 acres of wheat, and now it’s all desert.”</div>
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (13).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (14).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (15).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (16).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (17).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (18).jpg" data-size="1920x1080">
-                    <div class="overlay">It is now too late to save summer Arctic sea ice, research has shown, and
-                        scientists say preparations need to be made for the increased extreme weather across the
-                        northern hemisphere that is likely to occur as a result.</div>
+                <!-- Gallery Item -->
+                <!-- <div class="anita-gl-gallery-item is-video" data-src="video/albums/renewables.mp4" data-size="1280x720">
+                    <div class="overlay">Cities are being choked by polution</div>
 
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (19).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (20).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (21).jpg" data-size="1920x1080">
-                    <div class="overlay">Forests are more than trees – they provide food, water, and livelihoods and are imperative to the global ecosystem. </div>
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (22).jpg" data-size="1920x1080">
-                    <div class="overlay">Deforestation </div>
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (23).jpg" data-size="1920x1080">
-                    <div class="overlay">Palm oil production is one of the key drivers of rainforest and tropical deforestation worldwide</div>
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (24).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (25).jpg" data-size="1920x1080">
-                    <div class="overlay"></div>
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (26).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (27).jpg" data-size="1920x1080">
-                    <div class="overlay">Wind</div>
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (28).jpg" data-size="1920x1080">
-                    
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (29).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (30).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (31).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (32).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (33).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (34).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (35).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (36).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (37).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (38).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (39).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (40).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (41).jpg" data-size="1920x1080">
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (42).jpg" data-size="1920x1080">
-                    <div class="overlay">In the 2015 Paris Agreement,
-                        every nation in the world agreed to work together to achieve net zero greenhouse gas emissions by mid-century.</div>
-                </div>
-                <div class="anita-gl-gallery-item" data-src="img/albums/climate/story (43).jpg" data-size="1920x1080">
+                   
+                </div> -->
+
+                <!-- Gallery Item -->
+                <div class="anita-gl-gallery-item is-video" data-src="video/earth.mp4" data-size="1280x720">
+                    <div class="overlay">It is changing the natural balance of our planet, it is a direct result of human activity and the effects of climate change will become astrominically worse in the future.</div>
+
+                    <!-- <div class="anita-gl-gallery-item__content" data-aos="fade-up">
+        <span class="anita-meta anita-gl-gallery__meta">Portraits</span>
+        <h2 class="anita-gl-gallery__caption">
+            <sup>01.</sup>Green Turban
+        </h2>
+        <span class="anita-gl-gallery__explore">Explore</span>
+        <a href="albums-gl-carousel.html" class="anita-album-link"></a>
+    </div> -->
                 </div>
 
+
+
+
+                <!-- Gallery Item -->
+                <div class="anita-gl-gallery-item is-video" data-src="video/wildfire.mp4" data-size="1280x720">
+                    <div class="overlay">Wildfires are happening more often than ever before.</div>
+
+
+                </div>
+
+
+                <!-- Gallery Item -->
+                <div class="anita-gl-gallery-item is-video" data-src="video/Artick.mp4" data-size="1280x720">
+                    <div class="overlay">The Arctic may be sea ice-free in the summer by the 2030s</div>
+
+
+                </div>
+
+                 <!-- Gallery Item -->
+                 <div class="anita-gl-gallery-item is-video" data-src="video/elephant.mp4" data-size="1280x720">
+                    <div class="overlay">More than 1 million species face extinction – dozens of species go extinct
+                        every single day.</div>
+
+
+                </div>
+
+
+                <!-- Gallery Item -->
+                <div class="anita-gl-gallery-item is-video" data-src="video/indigenous.mp4" data-size="1280x720">
+                    <div class="overlay">Climate change is creating a refugee crisis. The International Organisation on
+                        Migration estimates that up to 200 million people could be displaced by climate change by 2050.
+                    </div>
+
+                </div>
+                
+                
+                
+                
             </div><!-- .anita-gl-slider-gallery -->
-
-            <!-- Post Navigation -->
-            <div class="anita-album-nav-prev" data-aos="fade-right" data-aos-delay="500">
-                <a href="https://responsibleuk.github.io/mission-zero-light/" class="anita-prev-album-link">
-                    <div class="anita-data-background" data-src="img/albums/covers_512/album02.jpg"></div>
-                    <span>
-                        Prev Album
-                        <span class="anita-prev-album-title">Metals & Mining</span>
-                    </span>
-                </a>
-            </div>
-            <div class="anita-album-nav-next" data-aos="fade-left" data-aos-delay="500">
-                <a href="albums-adjusted-3col.html" class="anita-next-album-link">
-                    <div class="anita-data-background" data-src="img/albums/covers_512/album04.jpg"></div>
-                    <span>
-                        Next Album
-                        <span class="anita-prev-album-title">Climate Solutions</span>
-                    </span>
-                </a>
-            </div>
         </div><!-- .anita-gl-slider-gallery-wrap -->
     </main>
 
@@ -219,6 +167,9 @@
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/aos.min.js"></script>
     <script src="js/core.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/countdown.js"></script>
+
 </body>
 
 </html>
