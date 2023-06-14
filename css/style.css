@@ -1554,7 +1554,7 @@ body.anita-show-menu .anita-page-background {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
-    font-weight: bold;
+    
     color: white;
    
     padding: 10px;
@@ -2848,28 +2848,25 @@ body.anita-unload.anita-show-menu .anita-nav {
 
  /* CSS for preloader */
  #preloader {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 9999;
   }
   
-  #preloader-logo {
-    width: 200px;
-    height: 200px;
-    /* Add your logo styles here */
+  #preloader video {
+    width: 320px; /* Adjust the dimensions according to your video */
+    height: 240px;
   }
   
-  #countdown {
-    font-size: 36px;
-    margin-top: 20px;
-    text-align: center;
+  #content {
+    display: none;
   }
 
 /* 13. BACK TO TOP
