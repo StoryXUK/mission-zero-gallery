@@ -3,5 +3,5 @@ window.addEventListener("load", function () {
   
   setTimeout(function() {
     preloader.style.display = "none";
-  }, 5000);
+  }, 3000);
 });
